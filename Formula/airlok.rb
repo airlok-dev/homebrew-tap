@@ -1,25 +1,25 @@
 class Airlok < Formula
   desc "A privacy airlock between your code and third-party models: a terminal coding agent that redacts secrets before they leave your machine."
   homepage "https://airlok.dev"
-  version "0.8.1"
+  version "0.8.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/airlok-dev/airlok/releases/download/v0.8.1/airlok-aarch64-apple-darwin.tar.xz"
-      sha256 "fd0f9c51eb841b9087b56ee74875d70b23b85d0161ede8e011db3a7425e47be2"
+      url "https://github.com/airlok-dev/airlok/releases/download/v0.8.2/airlok-aarch64-apple-darwin.tar.xz"
+      sha256 "7b3b7ba287942f6bb2cf72317d5658ae01638358f5e3359b6a26010cda4ecf9b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/airlok-dev/airlok/releases/download/v0.8.1/airlok-x86_64-apple-darwin.tar.xz"
-      sha256 "9488361ba90b8a184ca01c416992fa56455dbf475e8935a8f2d3de1a9fa0e1aa"
+      url "https://github.com/airlok-dev/airlok/releases/download/v0.8.2/airlok-x86_64-apple-darwin.tar.xz"
+      sha256 "0101fe950587ce3631a2f6d86ecbf46913953c76b67f4562c76aca14ef9123ee"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/airlok-dev/airlok/releases/download/v0.8.1/airlok-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f43826ccdd86c2a3644e2e44cd3e16a3ce3e85572c2a65ded6f51d61a396fa42"
+      url "https://github.com/airlok-dev/airlok/releases/download/v0.8.2/airlok-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "705c694d5a5b4b20e589879c61c2c8f11dd218c498f98f8b842b1fe4f4cd5f11"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/airlok-dev/airlok/releases/download/v0.8.1/airlok-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1b46671a494aa6d7821f64ca8da10612d8b9dee827dcd6df8a31fcb563393b97"
+      url "https://github.com/airlok-dev/airlok/releases/download/v0.8.2/airlok-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f55d94c22c8fe4518bd693f03b410be088c9a6953738eda41f5365243d454468"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
